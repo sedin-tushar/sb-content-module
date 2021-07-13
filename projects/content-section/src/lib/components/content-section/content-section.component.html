@@ -2,3 +2,4 @@
   [maxCardCount]="maxCardCount" [contentList]="contentList" (menuClick)="onCardMenuClick($event)"
   [viewMoreButtonText]='viewMoreButtonText' (viewMoreClick)="onViewMoreClick($event)" (cardClick)="onCardClick($event)">
 </sb-library-cards-grid>
+<hr *ngIf="contentList?.length" class="section-hr my-32" />
