@@ -35,7 +35,6 @@ export class SubjectSectionComponent implements OnInit {
     }
 
     handlePillSelect(event) {
-        console.log('handlePillSelect', event);
         this.clickEvent.emit(event);
     }
 
@@ -68,7 +67,6 @@ export class SubjectSectionComponent implements OnInit {
                         }
                     });
                     this.subjectSection = _.sortBy(this.subjectSection, ['index']);
-                    console.log('subjectSection', this.subjectSection);
                 }
 
             });
