@@ -1,0 +1,16 @@
+<div *ngFor="let section of subjectSection">
+    <sb-pills-grid *ngIf="section?.section?.isEnabled"
+                   [title]="title"
+                   [minDisplayCount]="section?.section?.theme?.limit || 4"
+                   [viewMoreText]="viewMoreText"
+                   [viewLessText]="viewLessText" [pillSize]="'medium'" [platform]="'portal'"
+                   [pillBorder]="'semi_round'" [pillsMultiRow]="'auto_responsive'" [pillTextElipsis]="'two_line'"
+                   (select)="handlePillSelect($event)">
+        <sb-pill-item *ngFor="let pillData of section.data"
+                      [name]="pillData?.name | titlecase"
+                      [icon]="getSectionPillIcon(section?.section?.theme?.icons, pillData?.value)"
+                      [value]="pillData"
+                      [theme]="pillData?.theme"></sb-pill-item>
+    </sb-pills-grid>
+    <hr *ngIf="section?.section?.isEnabled && section?.data?.length" class="section-hr my-32"/>
+</div>

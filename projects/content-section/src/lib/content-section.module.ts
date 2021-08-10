@@ -3,11 +3,12 @@ import { ContentSectionComponent } from './components/content-section/content-se
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption-v9';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { SubjectSectionComponent } from './components/subject-section/subject-section.component';
 
 
 @NgModule({
-  declarations: [ContentSectionComponent],
+  declarations: [ContentSectionComponent, SubjectSectionComponent],
   imports: [CommonConsumptionModule, HttpClientModule, CommonModule],
-  exports: [ContentSectionComponent]
+  exports: [ContentSectionComponent, SubjectSectionComponent]
 })
 export class ContentSectionModule { }
