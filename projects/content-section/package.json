@@ -1,14 +1,14 @@
 {
-  "name": "content-section",
-  "version": "0.0.6",
+  "name": "@project-sunbird/sb-content-section",
+  "version": "5.1.0",
   "peerDependencies": {
     "@angular/common": ">= 9.1.13",
     "@angular/core": ">= 9.1.13",
     "@project-sunbird/client-services": ">= 4.0.5",
-    "@project-sunbird/common-consumption-v9": ">= 4.1.1",
+    "@project-sunbird/common-consumption-v10": ">= 4.11.0",
     "lodash-es": ">=4.17.15"
   },
   "dependencies": {
-    "tslib": "^1.10.0"
+    "tslib": "^2.0.0"
   }
 }
