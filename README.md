@@ -30,5 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 | release branch    | npm package version | Angular Version |
 |-------------------|---------------------|-----------------|
-| release-5.1.0_v10 |      0.0.7          |     Ng V10      |
-| release-5.1.0_v11 |      0.0.8          |     Ng V11      |
+| release-5.1.0_v10 |      5.1.0          |     Ng V10      |
