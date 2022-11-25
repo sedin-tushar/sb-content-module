@@ -1,6 +1,6 @@
 {
-  "name": "content-section-v10",
-  "version": "0.0.7",
+  "name": "content-section-v11",
+  "version": "0.0.8",
   "peerDependencies": {
     "@angular/common": ">= 9.1.13",
     "@angular/core": ">= 9.1.13",

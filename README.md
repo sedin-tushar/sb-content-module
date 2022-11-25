@@ -1,6 +1,6 @@
 # SbContentModule
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.19.
 
 ## Development server
 
@@ -31,3 +31,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | release branch    | npm package version | Angular Version |
 |-------------------|---------------------|-----------------|
 | release-5.1.0_v10 |      0.0.7          |     Ng V10      |
+| release-5.1.0_v11 |      0.0.8          |     Ng V11      |
