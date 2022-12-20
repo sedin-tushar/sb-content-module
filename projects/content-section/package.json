@@ -1,6 +1,6 @@
 {
   "name": "@project-sunbird/sb-content-section",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "peerDependencies": {
     "@angular/common": ">= 9.1.13",
     "@angular/core": ">= 9.1.13",
