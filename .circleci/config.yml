@@ -25,9 +25,9 @@ jobs:
           name: Publish to NPM
           command: |
             if [ -z $CIRCLE_PR_NUMBER ]; then
-              build:lib:prod && npm pack ./dist/content-section
+              npm run build:lib:prod && npm pack ./dist/content-section
               echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-              npm publish --access public ./dist/content-section
+              npm publish  ./dist/content-section
             else
-              build:lib:prod && npm pack ./dist/content-section
+              npm run build:lib:prod && npm pack ./dist/content-section
             fi  
