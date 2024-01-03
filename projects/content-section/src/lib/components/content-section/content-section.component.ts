@@ -30,7 +30,6 @@ export class ContentSectionComponent implements OnInit, OnDestroy {
   @Input() isLoading: boolean = DEFAULT_LOADING;
   @Input() viewMoreButtonText: string = DEFAULT_VIEW_MORE_TEXT;
   @Input() sortBy: string;
-  @Input() categoryKeys= [];
 
   @Output() cardClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
   @Output() menuClick: EventEmitter<MouseEvent> = new EventEmitter();
