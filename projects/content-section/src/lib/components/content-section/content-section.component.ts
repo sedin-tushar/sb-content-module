@@ -30,14 +30,14 @@ export class ContentSectionComponent implements OnInit, OnDestroy {
   @Input() isLoading: boolean = DEFAULT_LOADING;
   @Input() viewMoreButtonText: string = DEFAULT_VIEW_MORE_TEXT;
   @Input() sortBy: string;
-  @Input() categoryKeys= [];
+  @Input() categoryKeys = [];
 
   @Output() cardClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
   @Output() menuClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() viewMoreClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
   contentList: IContent[] = [];
-  count: number;
+  contentCount: number;
   private unsubscribe$ = new Subject<void>();
   constructor(private contentSectionService: ContentSectionService) { }
 
@@ -48,8 +48,10 @@ export class ContentSectionComponent implements OnInit, OnDestroy {
   fetchContents() {
     if (this.searchRequest) {
       this.contentSectionService.search(this.searchRequest).subscribe((res: any) => {
-        this.contentList = this.sortBy ? res.content.concat().sort(Utility.sortBy(this.sortBy)) : res.content;
-        this.count = res.count;
+        if (res?.count>0) {
+          this.contentList = this.sortBy ? res.content.concat().sort(Utility.sortBy(this.sortBy)) : res.content;
+          this.contentCount = res.count;
+        }
       });
     }
   }

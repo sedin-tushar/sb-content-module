@@ -1,5 +1,5 @@
 <sb-library-cards-grid *ngIf="contentList?.length" [layoutConfig]="layoutConfig" [title]="title"
-  [maxCardCount]="maxCardCount" [contentList]="contentList" (menuClick)="onCardMenuClick($event)"
+  [maxCardCount]="maxCardCount" [contentList]="contentList" [contentCount]="contentCount" (menuClick)="onCardMenuClick($event)"
   [viewMoreButtonText]='viewMoreButtonText' (viewMoreClick)="onViewMoreClick($event)" (cardClick)="onCardClick($event)" [categoryKeys]="categoryKeys">
 </sb-library-cards-grid>
 <hr *ngIf="contentList?.length" class="section-hr my-32" />
