@@ -53,7 +53,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | release-5.1.0_v12 |      5.1.2          |     Ng V12      |
 | release-6.0.0_v13 |      6.0.0          |     Ng V13      |
 | release-7.0.0     |      7.0.0          |     Ng V13      |
-| 8.0.0_14          |      8.0.0          |     Ng V14    |
+| 8.0.0_14          |      8.0.0          |     Ng V14      |
+| 8.0.0_15          |      8.0.0          |     Ng V15      |
+
 
 
 
