@@ -15,7 +15,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Using library locally 
+## Using library locally
 
 1. Build library
 ```console
@@ -24,7 +24,7 @@ ng build
 2. link library
    -> cd dist/content-section
 ```console
-npm link "@project-sunbird/sb-content-section"
+npm link
 ```
 3. Link the library to your project
 ```console
