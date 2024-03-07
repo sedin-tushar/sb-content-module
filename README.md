@@ -15,6 +15,23 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Using library locally 
+
+1. Build library
+```console
+ng build
+```
+2. link library
+   -> cd dist/content-section
+```console
+npm link "@project-sunbird/sb-content-section"
+```
+3. Link the library to your project
+```console
+npm link @project-sunbird/sb-content-section --save
+```
+---
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
@@ -36,4 +53,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | release-5.1.0_v12 |      5.1.2          |     Ng V12      |
 | release-6.0.0_v13 |      6.0.0          |     Ng V13      |
 | release-7.0.0     |      7.0.0          |     Ng V13      |
+| 8.0.0_14          |      8.0.0          |     Ng V14    |
+
+
 
