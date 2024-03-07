@@ -24,7 +24,7 @@ ng build
 2. link library
    -> cd dist/content-section
 ```console
-npm link "@project-sunbird/sb-content-section"
+npm link
 ```
 3. Link the library to your project
 ```console
