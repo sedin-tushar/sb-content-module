@@ -5,7 +5,7 @@
     "@angular/common": "16.2.12",
     "@angular/core": "16.2.12",
     "@project-sunbird/client-services": "5.1.2",
-    "@project-sunbird/common-consumption": "6.0.0",
+    "@project-sunbird/common-consumption": "8.0.2",
     "lodash-es": "4.17.21"
 
   },
